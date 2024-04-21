@@ -193,7 +193,7 @@ header a{
 .carousel.next .thumbnail .mini:nth-child(1){
     width: 0;
     overflow: hidden;
-    animation: showMiniatiura 0.5s linear 1 forwards;
+    animation: showMiniatiura .5s linear 1 forwards;
 }
 @keyframes showMiniatiura{
     to{
@@ -202,7 +202,7 @@ header a{
 }
 .carousel.next .thumbnail{
     transform: translateX(150px);
-    animation: transformMiniatiura 0.5s linear 1 forwards1;
+    animation: transformMiniatiura .5s linear 1 forwards1;
 }
 @keyframes transformMiniatiura{
     to{
