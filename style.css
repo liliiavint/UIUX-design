@@ -190,18 +190,18 @@ header a{
         border-radius: 0;
     }
 }
-.carousel.next .thumbnail .mini:nth-last-child(1){
+.carousel.next .mini:nth-last-child(1){
     width: 0;
     overflow: hidden;
-    animation: showMiniatiura .5s linear 1 forwards;
+    animation: showThumbnail .5s linear 1 forwards;
 }
-@keyframes showMiniatiura{
+@keyframes showThumbnail{
     to{
         width: 150px;
     }
 }
 .carousel.next .thumbnail{
-    transform: translateX(150px);
+    transform: translateX(-150px);
     animation: transformMiniatiura .5s linear 1 forwards;
 }
 @keyframes transformMiniatiura{
@@ -217,7 +217,7 @@ header a{
     position: absolute;
     bottom: 0;
     left: 0;
-    animation: outImage 0.5s linear 1 forwards;
+    animation: outImagePrev 0.5s linear 1 forwards;
 }
 @keyframes outImage{
     to{
@@ -228,18 +228,23 @@ header a{
         bottom: 50px;
     }
 }
-.carousel .prev .mini:nth-child(1){
+.carousel.prev .mini:nth-child(1){
     width: 0;
     overflow: hidden;
     opacity: 0;
-    animation: showMiniatiura 0.5s linear 1 forwards;;
+    animation: showMiniPrev 0.5s linear 1 forwards;;
+}
+@keyframes showMiniPrev {
+    to {
+        width: 150px;
+    }
 }
 .carousel.prev .list .item:nth-child(2) .author,
 .carousel.prev .list .item:nth-child(2) .title,
 .carousel.prev .list .item:nth-child(2) .topic,
 .carousel.prev .list .item:nth-child(2) .des,
 .carousel.prev .list .item:nth-child(2) .buttons{
-    animation: contentOut 1.5s 1s linear 1 forwards;
+    animation: contentOut .5s linear 1 forwards;
 }
 @keyframes contentOut{
     to{
