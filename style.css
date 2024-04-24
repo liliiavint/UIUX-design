@@ -190,7 +190,7 @@ header a{
         border-radius: 0;
     }
 }
-.carousel.next .thumbnail .mini:nth-child(1){
+.carousel.next .thumbnail .mini:nth-last-child(1){
     width: 0;
     overflow: hidden;
     animation: showMiniatiura .5s linear 1 forwards;
@@ -202,7 +202,7 @@ header a{
 }
 .carousel.next .thumbnail{
     transform: translateX(150px);
-    animation: transformMiniatiura .5s linear 1 forwards1;
+    animation: transformMiniatiura .5s linear 1 forwards;
 }
 @keyframes transformMiniatiura{
     to{
@@ -228,7 +228,7 @@ header a{
         bottom: 50px;
     }
 }
-.mini:nth-child(1){
+.carousel .prev .mini:nth-child(1){
     width: 0;
     overflow: hidden;
     opacity: 0;
